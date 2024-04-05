@@ -8,16 +8,7 @@ app.use(express.json());
 // Gets the robots.txt file
 app.get("/robots.txt", function (req, res) {
   res.setHeader("Content-Type", "text/plain");
-
-  const filePath = path.join(__dirname, "robots.txt");
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      res.statusCode = 200;
-      res.end("User-agent: *\nDisallow: /");
-    } else {
-      res.end(data);
-    }
-  });
+  res.sendFile("./robots.txt", { root: __dirname });
 });
 
 // Redirect the homepage to the examples page
