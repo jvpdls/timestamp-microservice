@@ -2,6 +2,10 @@
 
 This repository showcases a Timestamp Microservice built using node.js. It returns responses for GET requests, converting dates (YYYY-MM-DD) and Unix (seconds) to UTC dates.
 
+## Live preview
+
+A live preview of this project can be seen [here](https://timestamp-ms.joaosantos.net.br/example.html).
+
 ## Setting it up locally
 
 1. clone this repository: `git clone https://github.com/jvpdls/timestamp-microservice.git`
