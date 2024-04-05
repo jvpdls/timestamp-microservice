@@ -30,7 +30,7 @@ app.get("*", function (req, res) {
   res.status(404).json({ error: "Resource not found" });
 });
 
-// This was commented out to avoid conflicts when deplyoind on vercel
+// This was commented out to avoid conflicts when deploying on vercel
 // app.listen(3000, () => {
 //  console.log(
 //    "The app is running locally. Visit http://localhost:3000/example to start."
