@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Redirect the homepage to the examples page
-app.get("/", (res) => {
+app.get("/", (req, res) => {
   res.redirect("/example.html");
 });
 
@@ -26,7 +26,7 @@ app.get("/api/:value", (req, res) => {
 });
 
 // Default GET endpoint for handling undefined routes.
-app.get("*", function (res) {
+app.get("*", function (req, res) {
   res.status(404).json({ error: "Resource not found" });
 });
 
