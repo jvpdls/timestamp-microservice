@@ -6,7 +6,8 @@ This repository showcases a Timestamp Microservice built using node.js. It retur
 
 1. clone this repository: `git clone https://github.com/jvpdls/timestamp-microservice.git`
 2. download its dependencies: `npm install`
-3. initialize it with `npm start`
+3. uncomment lines 34-38 of `index.js`
+3. run `npm start`
 
 ## Usage
 
