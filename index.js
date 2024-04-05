@@ -50,5 +50,9 @@ app.get("*", function (req, res) {
 
 // Start the Express server on port 3000.
 app.listen(3000, () => {
-  console.log("The app is running locally. Visit http://localhost:3000/example to start.");
+  console.log(
+    "The app is running locally. Visit http://localhost:3000/example to start."
+  );
 });
+
+module.exports = app;
