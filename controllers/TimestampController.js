@@ -1,6 +1,3 @@
-/**
- * Controller class for handling timestamp conversion.
- */
 class TimestampController {
   /**
    * Get the response object containing the converted timestamp values.
