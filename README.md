@@ -8,12 +8,19 @@ This repository showcases a Timestamp Microservice built using node.js. It retur
 2. download its dependencies: `npm install`
 3. initialize it with `npm start`
 
-### Example Usage:
-- Send a GET request to http://localhost:3000/api/2015-12-25
-- Send a GET request to http://localhost:3000/api/1451001600
+## Usage
 
-#### Example Output:
+### Routes
+This microservice relies on one GET route pointing at `/api/:value`, where `:value` must be either a date formatted as `YYYY-MM-DD`or a Unix\* value. For example:
+- `/api/2015-12-25`
+- `/api/1451001600`
+
+### Output
+Both of the requests above would result in the following response:
+
 `{"unix":1451001600, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}`
 
 ## Examples
-Once the project is initialized, you can always go to http://localhost:3000/example to see how it works.
+Once the project is initialized, you can always head over to `/example` to read its documentation on your browser.
+
+*\* The unix time stamp is a way to track time as a running total of seconds. This count starts at the Unix Epoch on January 1st, 1970 at UTC. Therefore, the unix time stamp is merely the number of seconds between a particular date and the Unix Epoch.*
